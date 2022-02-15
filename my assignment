@@ -1,0 +1,16 @@
+empno=int(input('enter empno :'))
+empname=input('enter empname:')
+empdesig=input('enter designation:')
+empsal=int(input('enter empsal:'))
+empasal=empsal*12
+if empasal>1000000:
+    tax=empasal*15/100
+elif empasal>700000:
+    tax=empasal*10/100
+elif empasal>500000:
+    tax=empasal*8/100
+elif empasal>300000:
+    tax=empasal*5/100
+else:
+    tax=0
+print('tax to be paid:',tax)    
